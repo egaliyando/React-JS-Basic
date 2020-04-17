@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 //import App from "./App";
-import Tittle from "./Component/Tittle";
+import Tittle from "./Component/MyData";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(<Tittle />, document.getElementById("root"));

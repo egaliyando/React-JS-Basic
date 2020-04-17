@@ -2,8 +2,14 @@
 
 import React from "react";
 
-export default class Button extends React.Component {
-  render() {
-    return <button>Button Comp</button>;
-  }
-}
+const Button = (props) => {
+  return (
+    <div>
+      <p>{props.judul}</p>
+      <p>{props.deskripsi}</p>
+      <button>this.props.mybutton}</button>
+    </div>
+  );
+};
+
+export default Button;

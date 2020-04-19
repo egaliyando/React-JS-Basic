@@ -7,7 +7,7 @@ const Button = (props) => {
     <div>
       <p>{props.judul}</p>
       <p>{props.deskripsi}</p>
-      <button>this.props.mybutton}</button>
+      <button>{props.mybutton}</button>
     </div>
   );
 };

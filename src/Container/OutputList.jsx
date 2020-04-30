@@ -1,6 +1,7 @@
 /** @format */
 import React from "react";
 import List from "../Component/List";
+import AddData from "../Component/AddData";
 
 export default class OutputList extends React.Component {
   state = {
@@ -10,10 +11,18 @@ export default class OutputList extends React.Component {
       { nama: "Elfin", umur: 18, passion: "Programmer", key: 3 },
     ],
   };
+  addData = (data) => {
+    data.key = Math.random();
+    let codeathome = [...this.state.codeathome, data];
+    this.setState({
+      codeathome: codeathome,
+    });
+  };
   render() {
     return (
       <div>
         <h1>Output List</h1> <List codeathome={this.state.codeathome} />
+        <AddData addData={this.addData} />
       </div>
     );
   }
